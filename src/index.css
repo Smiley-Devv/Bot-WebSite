@@ -152,3 +152,4 @@
 
 .btn-secondary {
   @apply relative overflow-hidden group px-6 py-3 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 transition-all duration-300 text-white font-medium backdrop-blur-xl;
+}
