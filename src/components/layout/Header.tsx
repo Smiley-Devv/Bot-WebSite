@@ -60,7 +60,7 @@ export function Header() {
               </button>
               {siteConfig.features.enableDashboard && (
                 <a 
-                  href="#" 
+                  href="/dashboard/login" 
                   className="relative overflow-hidden group px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl hover:shadow-[0_0_2rem_-0.5rem_#3b82f6] transition-all duration-300 border border-white/10 font-medium text-white"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
@@ -111,7 +111,7 @@ export function Header() {
                 </button>
                 {siteConfig.features.enableDashboard && (
                   <a 
-                    href="#" 
+                    href="/dashboard/login" 
                     className="relative overflow-hidden group px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl hover:shadow-[0_0_2rem_-0.5rem_#3b82f6] transition-all duration-300 border border-white/10 text-center font-medium text-white"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
