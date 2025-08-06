@@ -24,7 +24,7 @@ export class DiscordService {
       },
       body: new URLSearchParams({
         client_id: siteConfig.discord.clientId,
-        client_secret: 'p4td1yzIENLG_ZqrlIrU_Dula_XK9oZR', // This should be handled by your backend
+        client_secret: 'AddyoursHere', // This should be handled by your backend
         grant_type: 'authorization_code',
         code,
         redirect_uri: siteConfig.discord.redirectUri,
