@@ -4,6 +4,7 @@ A modern, responsive website for the Razor Discord Bot built with React, TypeScr
 
 ![Razor Bot](https://i.imgur.com/VbIcHzm.png)
 ![Premium Section](https://i.imgur.com/KfpXBqb.png)
+![Dashboard Section](https://ibb.co/JjBbyF84)
 
 ## Features ✨
 
