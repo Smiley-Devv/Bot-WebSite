@@ -81,6 +81,10 @@
 }
 
 .glass {
+  @apply bg-white/[0.03] backdrop-blur-xl border-0 shadow-xl shadow-black/10;
+}
+
+.glass-border {
   @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.05] shadow-xl shadow-black/10;
 }
 

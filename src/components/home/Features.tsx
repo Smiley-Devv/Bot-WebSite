@@ -109,7 +109,7 @@ export function Features() {
                   animationDelay: `${index * 0.1}s`
                 }}
               >
-                <div className="relative p-8 glass rounded-2xl hover:bg-white/[0.08] transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
+                <div className="relative p-8 glass-border rounded-2xl hover:bg-white/[0.08] transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
                   {/* Hover glow effect */}
                   <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 blur-xl`} />
                   

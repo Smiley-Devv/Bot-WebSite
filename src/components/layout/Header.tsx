@@ -23,7 +23,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="mx-4 my-4 glass rounded-2xl">
+      <div className="mx-4 my-4 glass-border rounded-2xl">
         <div className="max-w-[1800px] mx-auto">
           <div className="flex items-center justify-between h-16 px-6">
             <Link to="/" className="flex items-center gap-3">

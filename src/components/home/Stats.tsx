@@ -131,7 +131,7 @@ function StatCard({ icon: Icon, value, label, gradient, suffix = "+", formatter 
   }, [value]);
 
   return (
-    <div className="glass rounded-2xl p-8 hover:scale-105 transition-all duration-300">
+    <div className="glass-border rounded-2xl p-8 hover:scale-105 transition-all duration-300">
       <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${gradient} bg-opacity-10 mb-4`}>
         <Icon className="w-8 h-8 text-white" />
       </div>

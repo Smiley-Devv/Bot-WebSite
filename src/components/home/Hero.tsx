@@ -129,9 +129,9 @@ export function Hero() {
         </div>
 
         {/* Enhanced Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto relative z-10">
           <div className="group text-center transform hover:scale-110 transition-all duration-300">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-600/30 mb-4 group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500/10 to-blue-600/20 mb-4 group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300 border-0">
               <Users className="w-8 h-8 text-blue-400" />
             </div>
             <div className="text-3xl font-bold text-blue-300 mb-1">{siteConfig.totalUsers}K+</div>
@@ -139,7 +139,7 @@ export function Hero() {
           </div>
           
           <div className="group text-center transform hover:scale-110 transition-all duration-300">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-600/30 mb-4 group-hover:shadow-lg group-hover:shadow-purple-500/25 transition-all duration-300">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/10 to-purple-600/20 mb-4 group-hover:shadow-lg group-hover:shadow-purple-500/25 transition-all duration-300 border-0">
               <Server className="w-8 h-8 text-purple-400" />
             </div>
             <div className="text-3xl font-bold text-purple-300 mb-1">{siteConfig.totalServers}+</div>
@@ -147,7 +147,7 @@ export function Hero() {
           </div>
           
           <div className="group text-center transform hover:scale-110 transition-all duration-300">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500/20 to-pink-600/30 mb-4 group-hover:shadow-lg group-hover:shadow-pink-500/25 transition-all duration-300">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500/10 to-pink-600/20 mb-4 group-hover:shadow-lg group-hover:shadow-pink-500/25 transition-all duration-300 border-0">
               <Gauge className="w-8 h-8 text-pink-400" />
             </div>
             <div className="text-3xl font-bold text-pink-300 mb-1">99.9%</div>
@@ -155,7 +155,7 @@ export function Hero() {
           </div>
           
           <div className="group text-center transform hover:scale-110 transition-all duration-300">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-indigo-600/30 mb-4 group-hover:shadow-lg group-hover:shadow-indigo-500/25 transition-all duration-300">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500/10 to-indigo-600/20 mb-4 group-hover:shadow-lg group-hover:shadow-indigo-500/25 transition-all duration-300 border-0">
               <Bot className="w-8 h-8 text-indigo-400" />
             </div>
             <div className="text-3xl font-bold text-indigo-300 mb-1">v{siteConfig.botVersion}</div>
