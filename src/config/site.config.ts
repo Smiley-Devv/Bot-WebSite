@@ -36,6 +36,12 @@ export interface SiteConfig {
     enableCommands: boolean;
     enableDashboard: boolean;
   };
+  
+  discord: {
+    clientId: string;
+    redirectUri: string;
+    scopes: string[];
+  };
 }
 
 // Default configuration
@@ -89,6 +95,13 @@ export const siteConfig: SiteConfig = {
   features: {
     enableCommands: true,
     enableDashboard: true
+  },
+  
+  // chmqp dashboard enjoy
+  discord: {
+    clientId: "AddyourclientID", // Replace with your Discord application client ID
+    redirectUri: "http://localhost:5173/dashboard/callback", // Update for production
+    scopes: ["identify", "guilds"]
   }
 };
 
