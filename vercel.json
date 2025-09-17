@@ -1,5 +1,4 @@
 {
-  "_comment": "chmqp",
   "rewrites": [
     {
       "source": "/(.*)",
