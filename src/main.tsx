@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom';
 import App from './App.tsx';
 import Commands from './Commands.tsx';
 import Premium from './pages/Premium.tsx';
@@ -33,12 +33,12 @@ function ErrorBoundary({ error }: { error: Error }) {
   );
 }
 
-const router = createBrowserRouter([
+// Use hash router for better static hosting compatibility
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorBoundary error={new Error('Failed to load the application')} />,
-    shouldRevalidate: () => false
+    errorElement: <ErrorBoundary error={new Error('Failed to load the application')} />
   },
   {
     path: "/commands",

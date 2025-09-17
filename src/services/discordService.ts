@@ -1,4 +1,3 @@
-// chmqp dashboard enjoy
 import { DiscordUser, DiscordGuild } from '../types/discord';
 import { siteConfig } from '../config/site.config';
 
@@ -24,7 +23,7 @@ export class DiscordService {
       },
       body: new URLSearchParams({
         client_id: siteConfig.discord.clientId,
-        client_secret: 'AddyoursHere', // This should be handled by your backend
+        client_secret: 'YOUR_CLIENT_SECRET_HERE', // This should be handled by your backend
         grant_type: 'authorization_code',
         code,
         redirect_uri: siteConfig.discord.redirectUri,

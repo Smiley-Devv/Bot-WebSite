@@ -1,4 +1,3 @@
-// chmqp dashboard enjoy
 export interface DiscordUser {
   id: string;
   username: string;

@@ -99,7 +99,7 @@ export const siteConfig: SiteConfig = {
   
   // chmqp dashboard enjoy
   discord: {
-    clientId: "AddyourclientID", // Replace with your Discord application client ID
+    clientId: "YOUR_DISCORD_CLIENT_ID", // Replace with your Discord application client ID
     redirectUri: "http://localhost:5173/dashboard/callback", // Update for production
     scopes: ["identify", "guilds"]
   }

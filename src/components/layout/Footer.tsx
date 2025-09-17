@@ -97,26 +97,6 @@ export function Footer() {
             <p className="text-gray-400 text-xs mb-3 md:mb-0">
               © {new Date().getFullYear()} {siteConfig.siteName}. All rights reserved.
             </p>
-
-            {/* 
-              It would be appreciated if this part of the code is not modified. Thank you!
-              Casper104S 
-            */}
-
-            <div className="flex items-center gap-2 text-xs text-gray-400">
-              <span>Made with</span>
-              <Heart className="w-3 h-3 text-red-500 animate-pulse" />
-              <span>by</span>
-              <a 
-                href="https://casper.104shop.xyz"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-400 transition-colors flex items-center gap-1"
-              >
-                Casper
-                <ExternalLink className="w-2.5 h-2.5" />
-              </a>
-            </div>
           </div>
         </div>
       </div>
