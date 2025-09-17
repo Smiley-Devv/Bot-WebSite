@@ -1,3 +1,4 @@
+// chmqp
 import { Clock, Sparkles } from 'lucide-react';
 import { updates, UpdateChange } from '../../config/updates.config';
 

@@ -1,3 +1,4 @@
+// chmqp
 import { useState, useEffect } from 'react';
 import { Search, ChevronDown, ChevronUp, Shield, Sparkles } from 'lucide-react';
 import { commandCategories } from './data/commands';

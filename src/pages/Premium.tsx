@@ -1,3 +1,4 @@
+// chmqp
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Crown, Zap, Star, Music, Bot, Shield, Image } from 'lucide-react';

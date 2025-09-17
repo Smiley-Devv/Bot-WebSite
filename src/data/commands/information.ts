@@ -1,3 +1,4 @@
+// chmqp
 import { Command } from '../../types/commands';
 
 export const informationCommands: Command[] = [

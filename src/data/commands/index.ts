@@ -1,3 +1,4 @@
+// chmqp
 import { CommandCategory } from '../../types/commands';
 import { Shield, DollarSign, Gamepad, Gift, Image, Bot, Settings, Music, Wrench, Info, Sword, LifeBuoy } from 'lucide-react';
 import { automodCommands } from './automod';

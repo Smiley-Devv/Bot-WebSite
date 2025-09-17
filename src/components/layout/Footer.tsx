@@ -1,3 +1,4 @@
+// chmqp
 import { Bot, Github, Heart, ExternalLink } from 'lucide-react';
 import { CiTwitter } from "react-icons/ci";
 import { AiOutlineDiscord } from "react-icons/ai";

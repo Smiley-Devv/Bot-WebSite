@@ -1,3 +1,4 @@
+// chmqp
 import { DiscordUser, DiscordGuild } from '../types/discord';
 import { siteConfig } from '../config/site.config';
 

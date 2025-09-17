@@ -1,3 +1,4 @@
+// chmqp
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Settings, Users, Shield, Music, Crown, Bot, Server, Wrench, AlertTriangle } from 'lucide-react';

@@ -1,3 +1,4 @@
+// chmqp
 import React, { useState, useEffect } from 'react';
 import { BotInfo } from '../../types/bot';
 import { Users, Server, Layout, Zap, Terminal, Clock, Bot, Activity } from 'lucide-react';

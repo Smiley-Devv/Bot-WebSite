@@ -1,3 +1,4 @@
+// chmqp
 export interface BotInfo {
   totalUsers: number;
   totalServers: number;

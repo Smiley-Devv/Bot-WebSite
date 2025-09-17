@@ -1,3 +1,4 @@
+// chmqp
 import { Lock, AlertCircle, Shield, Database, Eye, Server, Trash2 } from 'lucide-react';
 import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';

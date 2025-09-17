@@ -1,3 +1,4 @@
+<!-- chmqp -->
 
 # Razor Discord Bot Website 🤖
 

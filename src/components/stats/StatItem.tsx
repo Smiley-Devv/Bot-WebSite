@@ -1,3 +1,4 @@
+// chmqp
 import { LucideIcon } from 'lucide-react';
 
 interface StatItemProps {

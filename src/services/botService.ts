@@ -1,3 +1,4 @@
+// chmqp
 import { BotInfo } from '../types/bot';
 import { API_CONFIG } from '../config/api';
 import { fetchWithTimeout } from '../utils/api';

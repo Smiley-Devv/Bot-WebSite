@@ -1,3 +1,4 @@
+// chmqp
 export default {
   plugins: {
     tailwindcss: {},

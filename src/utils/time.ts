@@ -1,3 +1,4 @@
+// chmqp
 export function formatUptime(uptimeInMilliseconds: number): string {
   const uptimeInSeconds = Math.floor(uptimeInMilliseconds / 1000);
   

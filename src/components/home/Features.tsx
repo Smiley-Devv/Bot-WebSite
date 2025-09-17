@@ -1,3 +1,4 @@
+// chmqp
 import { Shield, Settings, Music, DollarSign, Wrench, Gift, Ticket, BarChart, MessageSquare, Gamepad, Image, Bot, Sparkles } from 'lucide-react';
 
 const features = [

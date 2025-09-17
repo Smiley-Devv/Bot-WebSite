@@ -1,3 +1,4 @@
+// chmqp
 import { Bot, Sparkles, Users, Server, Gauge, ArrowRight, Zap, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { siteConfig } from '../../config/site.config';
