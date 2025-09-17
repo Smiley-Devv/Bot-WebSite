@@ -1,5 +1,5 @@
 // chmqp
-import { LucideIcon } from 'lucide-react';
+import { DivideIcon as LucideIcon } from 'lucide-react';
 
 interface StatItemProps {
   icon: LucideIcon;
