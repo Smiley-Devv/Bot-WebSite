@@ -2,9 +2,6 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "has": [
-        { "type": "host", "value": "domain.com" }
-      ],
       "destination": "/"
     }
   ]
