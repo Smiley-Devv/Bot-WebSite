@@ -16,7 +16,7 @@ import './index.css';
 function ErrorBoundary({ error }: { error: Error }) {
   return (
     <div className="min-h-screen bg-mesh text-white">
-      <div className="container py-20">
+      <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-4">Something went wrong</h1>
           <p className="text-gray-400 mb-8">
@@ -39,39 +39,46 @@ const router = createHashRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorBoundary error={new Error('Failed to load the application')} />
+    errorElement: <ErrorBoundary error={new Error('Failed to load the application')} />,
   },
   {
     path: "/commands",
-    element: <Commands />
+    element: <Commands />,
+    errorElement: <ErrorBoundary error={new Error('Failed to load commands page')} />,
   },
   {
     path: "/premium",
-    element: <Premium />
+    element: <Premium />,
+    errorElement: <ErrorBoundary error={new Error('Failed to load premium page')} />,
   },
   {
     path: "/dashboard",
-    element: <Dashboard />
+    element: <Dashboard />,
+    errorElement: <ErrorBoundary error={new Error('Failed to load dashboard')} />,
   },
   {
     path: "/dashboard/login",
-    element: <DashboardLogin />
+    element: <DashboardLogin />,
+    errorElement: <ErrorBoundary error={new Error('Failed to load dashboard login')} />,
   },
   {
     path: "/dashboard/callback",
-    element: <DashboardCallback />
+    element: <DashboardCallback />,
+    errorElement: <ErrorBoundary error={new Error('Failed to load dashboard callback')} />,
   },
   {
     path: "/terms",
-    element: <TermsOfService />
+    element: <TermsOfService />,
+    errorElement: <ErrorBoundary error={new Error('Failed to load terms page')} />,
   },
   {
     path: "/privacy",
-    element: <PrivacyPolicy />
+    element: <PrivacyPolicy />,
+    errorElement: <ErrorBoundary error={new Error('Failed to load privacy page')} />,
   },
   {
     path: "*",
-    element: <NotFound />
+    element: <NotFound />,
   }
 ]);
 

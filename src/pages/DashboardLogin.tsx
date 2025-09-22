@@ -1,5 +1,4 @@
 // chmqp
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Bot, Shield, Zap, ArrowRight } from 'lucide-react';
 import { Header } from '../components/layout/Header';
@@ -8,7 +7,13 @@ import { DiscordService } from '../services/discordService';
 
 export default function DashboardLogin() {
   const handleDiscordLogin = () => {
-    window.location.href = DiscordService.getAuthUrl();
+    try {
+      const authUrl = DiscordService.getAuthUrl();
+      window.location.href = authUrl;
+    } catch (error) {
+      console.error('Error generating Discord auth URL:', error);
+      alert('Unable to generate Discord login URL. Please check the configuration.');
+    }
   };
 
   return (
@@ -16,7 +21,7 @@ export default function DashboardLogin() {
       <Header />
       
       <main className="pt-32 pb-20">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="relative mb-12">
               <div className="absolute inset-0 z-0">
@@ -25,7 +30,7 @@ export default function DashboardLogin() {
 
               <div className="relative z-10">
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-0.5 mb-6 animate-float">
-                  <div className="w-full h-full rounded-full glass flex items-center justify-center">
+                  <div className="w-full h-full rounded-full bg-white/[0.03] backdrop-blur-xl flex items-center justify-center">
                     <Bot className="w-10 h-10 text-blue-400" />
                   </div>
                 </div>
@@ -39,7 +44,7 @@ export default function DashboardLogin() {
               </div>
             </div>
 
-            <div className="glass rounded-2xl p-8 mb-12">
+            <div className="bg-white/[0.03] backdrop-blur-xl rounded-2xl p-8 mb-12 border border-white/[0.05]">
               <h2 className="text-2xl font-semibold mb-6">Why Connect with Discord?</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
@@ -75,10 +80,10 @@ export default function DashboardLogin() {
             <div className="space-y-6">
               <button
                 onClick={handleDiscordLogin}
-                className="relative overflow-hidden group px-8 py-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-white/10 hover:shadow-[0_0_2rem_-0.5rem_#3b82f6] transition-all duration-300 text-white font-semibold text-lg flex items-center gap-3 backdrop-blur-xl mx-auto"
+                className="relative overflow-hidden group px-8 py-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-white/10 hover:shadow-[0_0_2rem_-0.5rem_#3b82f6] transition-all duration-300 text-white font-semibold text-lg backdrop-blur-xl mx-auto inline-flex items-center gap-3"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                <span className="relative flex items-center gap-2">
+                <span className="relative flex items-center gap-3">
                   <Bot className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                   Login with Discord
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -87,7 +92,7 @@ export default function DashboardLogin() {
 
               <p className="text-sm text-gray-400">
                 Don't have Razor Bot in your server yet?{' '}
-                <Link to="/" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <Link to="/" className="text-blue-400 hover:text-blue-300 transition-colors underline">
                   Add it now
                 </Link>
               </p>

@@ -6,6 +6,17 @@ const DISCORD_API_BASE = 'https://discord.com/api/v10';
 
 export class DiscordService {
   static getAuthUrl(): string {
+    // Validate configuration
+    if (!siteConfig.discord.clientId || siteConfig.discord.clientId === 'YOUR_DISCORD_CLIENT_ID') {
+      console.error('Discord client ID not configured');
+      throw new Error('Discord client ID not configured. Please update the configuration.');
+    }
+    
+    if (!siteConfig.discord.redirectUri) {
+      console.error('Discord redirect URI not configured');
+      throw new Error('Discord redirect URI not configured. Please update the configuration.');
+    }
+
     const params = new URLSearchParams({
       client_id: siteConfig.discord.clientId,
       redirect_uri: siteConfig.discord.redirectUri,
@@ -17,6 +28,11 @@ export class DiscordService {
   }
 
   static async exchangeCodeForToken(code: string): Promise<string> {
+    // This should be handled by your backend in production
+    if (!code) {
+      throw new Error('No authorization code provided');
+    }
+
     const response = await fetch(`${DISCORD_API_BASE}/oauth2/token`, {
       method: 'POST',
       headers: {
@@ -40,6 +56,10 @@ export class DiscordService {
   }
 
   static async getCurrentUser(token: string): Promise<DiscordUser> {
+    if (!token) {
+      throw new Error('No access token provided');
+    }
+
     const response = await fetch(`${DISCORD_API_BASE}/users/@me`, {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -54,6 +74,10 @@ export class DiscordService {
   }
 
   static async getUserGuilds(token: string): Promise<DiscordGuild[]> {
+    if (!token) {
+      throw new Error('No access token provided');
+    }
+
     const response = await fetch(`${DISCORD_API_BASE}/users/@me/guilds`, {
       headers: {
         Authorization: `Bearer ${token}`,
